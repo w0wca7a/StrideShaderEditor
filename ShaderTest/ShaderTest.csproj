@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <StartupObject>ShaderTest.ShaderEditorForm</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\damzi\.nuget\packages\stride.shaders.compiler\4.2.0.2293\contentFiles\any\any\linux-x64\glslangValidator.bin" />
+    <None Remove="C:\Users\damzi\.nuget\packages\stride.shaders.compiler\4.2.0.2293\contentFiles\any\any\osx-x64\glslangValidator.bin" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="doc\_basics.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Stride.Graphics" Version="4.2.0.2293" />
+		<PackageReference Include="Stride.Engine" Version="4.2.0.2293" />
+		<PackageReference Include="Stride.Rendering" Version="4.2.0.2293" />
+		<PackageReference Include="Stride.Shaders" Version="4.2.0.2293" />
+		
+		<PackageReference Include="Stride.Shaders.Compiler" Version="4.2.0.2293" />
+	</ItemGroup>
+
+</Project>

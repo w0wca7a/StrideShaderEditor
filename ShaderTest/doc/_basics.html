@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Arial; 
+            line-height: 1.6; 
+            color: #333;
+            padding: 20px;
+        }
+        h1 { color: #2c3e50; }
+        h2 { color: #3498db; margin-top: 25px; }
+        code { 
+            background: #f8f9fa; 
+            padding: 2px 5px; 
+            border-radius: 3px;
+            font-family: Consolas;
+        }
+        pre {
+            background: #f8f9fa;
+            padding: 10px;
+            border-left: 3px solid #3498db;
+            overflow: auto;
+        }
+        .note {
+            background: #e7f5fe;
+            padding: 10px;
+            border-left: 3px solid #3498db;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stride Shader Basics</h1>
+    
+    <h2>Getting Started</h2>
+    <p>Welcome to Stride shader programming! Here are the fundamental concepts:</p>
+    
+    <div class='note'>
+        Shaders in Stride use HLSL (High-Level Shading Language) with some Stride-specific extensions. <a href="http://doc.stride3d.net/latest/en/manual/graphics/effects-and-shaders/shading-language/index.html" >Detailed</a>
+    </div>
+    
+    <h2>Basic Shader Structure</h2>
+    <pre>shader MyShader : ComputeColor
+{
+    override float4 Compute()
+    {
+        return float4(1, 0, 0, 1); // Red color
+    }
+};</pre>
+    
+    <h2>Common Examples</h2>
+    
+    <h3>Solid Color</h3>
+    <pre>shader SolidBlue : ComputeColor
+{
+    override float4 Compute()
+    {
+        return float4(0, 0, 1, 1); // Blue
+    }
+};</pre>
+    <h3>PulsingColor</h3>
+    <pre>shader PulsingColor : ComputeColor
+{
+    override float4 Compute()
+    {
+        float pulse = sin(time * 2) * 0.5 + 0.5;
+        return float4(pulse, 0, 1-pulse, 1);
+    }
+};</pre>
+    <h2>Next Steps</h2>
+    <ul>
+        <li>Experiment with changing color values</li>
+        <li>Try combining different inputs</li>
+        <li>Explore Stride's documentation for advanced features</li>
+    </ul>
+</body>
+</html>"
