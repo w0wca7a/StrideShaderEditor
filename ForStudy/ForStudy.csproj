@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net10.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<StartupObject>Compiler</StartupObject>
+	</PropertyGroup>
+	<ItemGroup>
+	  <PackageReference Include="Stride.Core.Shaders" Version="4.3.0.2507" />
+	  <PackageReference Include="Stride.Graphics" Version="4.3.0.2507" />
+	  <PackageReference Include="Stride.Rendering" Version="4.3.0.2507" />
+	  <PackageReference Include="Stride.Shaders" Version="4.3.0.2507" />
+	  <PackageReference Include="Stride.Shaders.Compiler" Version="4.3.0.2507" />
+	  <PackageReference Include="Stride.Shaders.Parser" Version="4.3.0.2507" />
+	</ItemGroup>
+</Project>

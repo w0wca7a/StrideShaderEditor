@@ -1,4 +1,4 @@
-﻿namespace ShaderTest;
+﻿namespace ShaderCompilerTest;
 
 public partial class ShaderEditorForm
 {
