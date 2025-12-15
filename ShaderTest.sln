@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.3.11310.294
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShaderCompilerTest", "ShaderTest\ShaderCompilerTest.csproj", "{FDC8700A-ABB7-44ED-9E09-5A021CFA924C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForStudy", "ForStudy\ForStudy.csproj", "{330A397E-41CD-D820-C742-65EB3DA381AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDC8700A-ABB7-44ED-9E09-5A021CFA924C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDC8700A-ABB7-44ED-9E09-5A021CFA924C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDC8700A-ABB7-44ED-9E09-5A021CFA924C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDC8700A-ABB7-44ED-9E09-5A021CFA924C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{330A397E-41CD-D820-C742-65EB3DA381AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{330A397E-41CD-D820-C742-65EB3DA381AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{330A397E-41CD-D820-C742-65EB3DA381AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{330A397E-41CD-D820-C742-65EB3DA381AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E0F2CFE-41EF-419E-A882-A1133C0FF409}
+	EndGlobalSection
+EndGlobal

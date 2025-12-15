@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace ShaderTest
+namespace ShaderCompilerTest
 {
     internal class Basics : Form
     {

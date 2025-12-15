@@ -21,7 +21,7 @@ using Stride.Shaders.Parser.Mixins;
 using Color = Stride.Core.Mathematics.Color;
 //using CompilerParameters = Stride.Shaders.Compiler.CompilerParameters;
 
-namespace ShaderTest;
+namespace ShaderCompilerTest;
 
 
 public partial class ShaderEditorForm : Form
@@ -264,11 +264,7 @@ public partial class ShaderEditorForm : Form
 
                 var compilerParameters = new CompilerParameters
                 {
-                    EffectParameters = new EffectCompilerParameters
-                    {
-                        Platform = GraphicsPlatform.Direct3D11,
-                        Profile = GraphicsProfile.Level_11_0
-                    }
+                    EffectParameters = EffectCompilerParameters.Default,
                 };
 
 

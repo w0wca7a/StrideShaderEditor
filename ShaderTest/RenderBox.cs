@@ -22,7 +22,7 @@ using Stride.Shaders.Parser.Mixins;
 using Buffer = Stride.Graphics.Buffer;
 using Color = Stride.Core.Mathematics.Color;
 
-namespace ShaderTest
+namespace ShaderCompilerTest
 {
     public class RenderBox(Stream stream) : Game
     {
@@ -73,8 +73,7 @@ namespace ShaderTest
         {
             buffer = Buffer.New(
                 GraphicsDevice,
-                new[]
-                {
+                [
                     // top left corner
                     new Vector3( 1f, -1f, 0), // 2
                     new Vector3(-1f, -1f, 0), //3
@@ -84,7 +83,7 @@ namespace ShaderTest
                     new Vector3(-1f,  1f, 0), // 0
                     new Vector3( 1f,  1f, 0), // 1
                     new Vector3( 1f, -1f, 0), // 2
-                },
+                ],
             BufferFlags.VertexBuffer, 
             GraphicsResourceUsage.Immutable);
 
